@@ -1,14 +1,16 @@
 import React from 'react';
-import ChartComponent from './components/ChartComponent'; // Import your reusable chart component
+import BarChart from './components/BarChart'; // Import the BarChart component
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Financial Data Chart</h1>
-      {/* Here you will use the ChartComponent and pass data and options as props */}
-      <ChartComponent type="bar" data={/* Your data here */} options={/* Your chart options here */} />
+    <div style={{ padding: '20px' }}>
+      {/* Page Title */}
+      <h1>Chart Dashboard</h1>
+      
+      {/* Render the BarChart component */}
+      <BarChart />
     </div>
   );
-}
+};
 
 export default App;
